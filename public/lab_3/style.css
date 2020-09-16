@@ -59,7 +59,7 @@ p, li {
 }
 
 body > * {
-  background-color: red;
+  background-color: rgb(0, 255, 13);
   padding: 1%;
 }
 
@@ -73,7 +73,7 @@ h1 {
   text-transform: uppercase;
 }
 
-header img {
+.header img {
   display: block;
   height: 60px;
   padding-top: 20.15px;
