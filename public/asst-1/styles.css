@@ -4,16 +4,20 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    background: white;
   }
+
   body {
     font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
     background: blue;
     color: #fff;
     padding: 50px 0;
   }
+
   .wrapper {
 
   }
+
   .conatiner {
     width: 80%;
     max-width: 1200px;
