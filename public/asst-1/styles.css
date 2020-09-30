@@ -4,7 +4,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    background: white;
+    background: grey;
   }
   h1 {
     justify-content: left;
@@ -15,7 +15,7 @@
   body {
     font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
     background: blue;
-    color: #fff;
+    color: white;
     padding: 50px 0;
   }
 
