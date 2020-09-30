@@ -6,7 +6,12 @@
     align-items: center;
     background: white;
   }
-
+  h1 {
+    justify-content: left;
+  }
+  .header_image {
+    justify-content: right;
+  }
   body {
     font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
     background: blue;
