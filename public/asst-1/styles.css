@@ -27,4 +27,6 @@
     margin
   }
   
-  .co
+  .container * {
+    box-sizing: border-box;
+  }
