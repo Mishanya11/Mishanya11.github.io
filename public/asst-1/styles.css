@@ -39,4 +39,5 @@
      flex-wrap: wrap;
      display: flex;
      background: tan;
+     max-width: 960px;
    }
