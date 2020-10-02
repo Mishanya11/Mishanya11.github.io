@@ -24,7 +24,19 @@
   .container {
     width: 80%;
     max-width: 1200px;
-    margin
+    margin: 0 auto;
   }
   
-  .co
+  .container * {
+    box-sizing: border-box;
+  }
+
+  .var p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+   ol {
+     flex-wrap: wrap;
+     display: flex;
+     background: tan;
+   }
