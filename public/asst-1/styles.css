@@ -23,7 +23,7 @@
     align-items: center;
   }
 
-  @media (min-width: 1025px){
+  @media (min-width: 1001px){
     .container {
       width: 80%;
       max-width: 960px;
@@ -36,7 +36,7 @@
     }
   }
 
-  @media (max-width: 1024px){
+  @media (max-width: 1000px){
     .container {
       width: 80%;
       max-width: 960px;
@@ -51,7 +51,7 @@
   .container * {
     box-sizing: border-box;
   }
-  @media (min-width: 1025px){
+  @media (min-width: 1001px){
     .var {
       margin-right: 15px;
       display: flex;
@@ -61,7 +61,7 @@
     }
   }
 
-  @media (max-width: 1024px){
+  @media (max-width: 1000px){
     .var {
       margin-right: 0px;
       display: flex;
