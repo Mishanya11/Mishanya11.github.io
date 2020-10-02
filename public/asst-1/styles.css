@@ -5,9 +5,9 @@
     justify-content: space-between;
     align-items: center;
     background: grey;
+    max-height: 350px;
   }
  
-  
   body {
     font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
     background: lightcyan;
