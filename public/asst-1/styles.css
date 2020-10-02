@@ -5,8 +5,13 @@
     justify-content: space-between;
     align-items: center;
     background: grey;
+    max-height: 350px;
   }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 5ea22efa4fc679201194bba794cf519054576ba2
   body {
     font-family: 'Roboto', sans-serif;
     background: lightcyan;
@@ -43,6 +48,7 @@
      flex-wrap: wrap;
      display: flex;
      background: tan;
+<<<<<<< HEAD
    }
   
   .image{
@@ -50,3 +56,7 @@
     border-width: 1px;
     border-style: solid;
   }
+=======
+     max-width: 960px;
+   }
+>>>>>>> 5ea22efa4fc679201194bba794cf519054576ba2
