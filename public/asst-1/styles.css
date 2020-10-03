@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: center;
     background: #014970;
+    color: white;
     max-height: 350px;
     padding: 15px;
     margin-top: -60px;
@@ -84,6 +85,12 @@
 
     .var p{
       margin: 0 0 0 15px;
+    }
+
+    .var2{
+      background: #FFF7EB;
+      padding: 15px;
+      margin-top: 15px;
     }
 
     .container {
