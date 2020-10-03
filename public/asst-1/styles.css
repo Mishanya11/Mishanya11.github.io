@@ -2,11 +2,14 @@
     margin-bottom: 15px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background: #014970;
     max-height: 350px;
     padding: 15px;
+    margin-top: -60px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 
  
@@ -60,6 +63,16 @@
     align-items: center;
   }
 
+  .var p{
+    background: rgb(8, 148, 241);
+    padding: 15px;
+  }
+
+  .var2{
+    background: #FFF7EB;
+    padding: 15px;
+  }
+
   @media (max-width: 1000px){
     .var {
       margin-right: 0px;
@@ -68,6 +81,11 @@
       justify-content: center;
       flex: 1 0 auto;
     }
+
+    .var p{
+      margin: 0 0 0 15px;
+    }
+
     .container {
       width: 80%;
       max-width: 960px;
