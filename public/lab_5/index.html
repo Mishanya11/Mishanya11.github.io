@@ -2,7 +2,7 @@
     <html lang="en">
         <head>
             <meta charset="utf-8">
-            <title>Michael Rakhamimov's lab 5</title>
+            <title>Michael Rakhamimov's lab 4</title>
             <link rel="stylesheet" href="styles.css">
         </head>
         <body>
@@ -11,7 +11,7 @@
                 <form action ="/api" method ="post">
                     
                     <div class="header">
-                        <h1>Michael Rakhamimov's lab 5</h1>
+                        <h1>Michael Rakhamimov's lab 4</h1>
                     </div>
                     
                     <ul class="flex-outer">
@@ -67,20 +67,44 @@
                         </li>
                         
                         <li>
-                            <button type="submit" id="activate" name="activate">Activate </button>
+                            <button onclick="testFunction()" type="submit" id="activate" name="activate">Activate </button>
                         </li>
 
                     </ul>
                 </form>
             </div>
 
-            function testFunction() {
-                fetch('/api')
-                .then((response) => response.text())
-                .then((response) => {
-                    console.log(response);
-                })
-            }
-        </body>
+            <script>
+                function testFunction() {
+                    fetch('/api')
+                    .then((response) => response.text())
+                    .then((response) => {
+                        console.log(response);
 
+                        const newColor = 'rgb(' + (166) + ',' + (0) + ',' + (255) + ')';
+                        document.body.style.backgroundColor = newColor;
+                        
+                        const head = document.querySelector('h1')
+                        head.innerHTML = response;
+
+                        const titl = document.querySelector('title')
+                        titl.innerHTML = response;
+
+                        const lbl = document.querySelector('.checkbox-list-label')
+                        lbl.innerHTML = 'Fruits';
+
+                        const center = document.querySelector('.flex-outer')
+                        center.style = 'margin: 0 auto;';
+
+                        const elements = document.querySelectorAll('.flex-inner > li > label')
+                        const fruityArray = ['Plum', 'Pear', 'Kiwi']
+                        elements.forEach((el,i) => {
+                            const text = el.innerText;
+                            el.innerText = fruityArray[i];
+                        })
+                    })
+                }
+            </script>
+
+        </body>
     </html>
