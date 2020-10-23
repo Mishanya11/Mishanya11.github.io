@@ -8,7 +8,7 @@ function range(int) {
   return arr;
 }
 
-function sortFunction(a, b, key) {
+function sortFunction(org, compare, key) {
   if (a[key] < b[key]) {
     return -1;
   } if (a[key] > b[key]) {
@@ -29,8 +29,26 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
-      // You're going to do your lab work in here. Replace this comment.
-      console.log('fromServer', fromServer);
+      if (document.querySelector('.flex-inner')) {
+        document.querySelector('.flex-inner').remove();
+      }
+      const array1 = range(10);
+      const array2 = array1.map(() => {
+        const num = getRandomIntInclusive(0, 243);
+        return fromServer(num);
+      });
+
+      const reverseList = array2.sort((org, compare) => sortFunction(org, compare, 'name'));
+      const ul = document.createElement('ul');
+      ul.className = 'flex-inner';
+      $('form').prepend(ul);
+
+      reverseList.forEach((element, idx) => {
+        const li = document.createElement('li');
+        $(li).append('<input type="checkbox" value=$(element.code) id=$(element.code) />');
+        $(li).append('<label for=$(element.code)>$(element.name)</label>');
+        $(li).append(li);
+      });
     })
     .catch((err) => console.log(err));
 });
