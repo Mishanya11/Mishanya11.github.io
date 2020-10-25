@@ -1,15 +1,15 @@
 // You may wish to find an effective randomizer function on MDN.
 
 function randomInt(min, max) {
-  return Math.floor(Math.random() * Math.floor(max) - Math.floor(min)) + Math.floor(min);
+  return Math.floor(Math.random() * Math.floor(max) - Math.floor(min));
 }
 
 function range(int) {
-  const arr = [];
+  const array = [];
   for (let i = 0; i < int; i += 1) {
-    arr.push(i);
+    array.push(i);
   }
-  return arr;
+  return array;
 }
 
 function sortFunction(a, b, key) {
